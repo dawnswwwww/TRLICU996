@@ -5,6 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-	site: 'https://example.com',
+	base: '/TRLICU996/',
+	site: 'https://dawnswwwww.github.io',
 	integrations: [mdx(), sitemap()],
+	trailingSlash: 'never',
 });
