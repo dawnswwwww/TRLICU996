@@ -6,6 +6,7 @@
     "dev": "astro dev --host",
     "build": "astro build",
     "preview": "astro preview",
+    "postbuild": "node ./postbuild.mjs",
     "astro": "astro"
   },
   "dependencies": {
