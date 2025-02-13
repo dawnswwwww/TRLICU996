@@ -1,0 +1,41 @@
+<script src="https://giscus.app/client.js"
+        data-repo="astro-blog-demo/astro-blog"
+        data-repo-id="R_kgDOK7654x"
+        data-category="Blog Comments"
+        data-category-id="DIC_kwDOK7654x4CZpK2"
+        data-mapping="pathname"
+        data-strict="0"
+        data-reactions-enabled="1"
+        data-emit-metadata="0"
+        data-input-position="top"
+        data-theme="preferred_color_scheme"
+        data-lang="en"
+        data-loading="lazy"
+        crossorigin="anonymous"
+        async>
+</script>
+
+<div class="comments-container">
+  <div class="giscus"></div>
+</div>
+
+<style>
+  .comments-container {
+    margin-top: 4rem;
+    padding: 2rem;
+    background-color: rgba(var(--gray-light), 0.5);
+    border-radius: 8px;
+    box-shadow: var(--box-shadow);
+  }
+
+  :global([data-theme="dark"]) .comments-container {
+    background-color: rgba(var(--gray-dark), 0.2);
+  }
+
+  @media (max-width: 720px) {
+    .comments-container {
+      padding: 1rem;
+      margin-top: 2rem;
+    }
+  }
+</style>
